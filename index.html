@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  :root {
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark: hsl(229, 23%, 23%);
+    --Dark-grayish: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+  }
+   *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "kumbh Sans", sans-serif;
+  }
+    body{
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 50vh right 50vw, top 40vh left 50vw;
+      background-color: var(--Dark-cyan);
+    }
+
+    .cartao{
+      border: 1px solid var(--Dark-cyan);
+      border-radius: 20px;
+      background-color: white;
+      background-image: url(images/bg-pattern-card.svg);
+      background-repeat: repeat-x;
+      width: 350px;
+      height: 400px;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .foto-perfil img {
+      margin-top: 75px;
+      border: 5px solid white;
+      border-radius: 50%;
+    }
+    .title{
+      margin-top: -20px;
+    }
+    .title p {
+      margin: 10px;
+    }
+
+    .status{
+      margin-top: -20px;
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid silver;
+      padding: 30px 20px 10px 20px;
+    }
+    
+    strong{
+      font-size: 18px;
+    }
+
+    .status div p {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--Dark-grayish);
+    }
+
+    .title p span {
+      color:var(--Dark-grayish);
+    }
+
+    .origen {
+      font-size: 14px;
+    }
+
+    /*.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+  </style>
+</head>
+<body>
+    <div class="cartao">
+      <div class="foto-perfil">
+        <img src="images/image-victor.jpg" alt="image-victor">
+      </div>
+       <div class="title">
+        <p><strong>Victor Crest</strong>&nbsp <span>26</span></p>
+        <p><span class="origen">London</span></p>
+       </div>
+      <div class="status">
+       <div><strong>80K</strong><p>Followers</p></div>
+        <div><strong>803K</strong><p>Likes</p></div>
+       <div><strong>1.4K</strong><p>Photos</p></div>
+      </div>
+    </div>
+</body>
+</html>
